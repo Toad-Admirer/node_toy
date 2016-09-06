@@ -1,0 +1,13 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+
+# Dependency directory
+app/node_modules
+app/README.md
