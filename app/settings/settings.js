@@ -1,3 +1,3 @@
 module.exports = {
-  cookieSecret: 'myblog'
+  mongodbUrl: 'mongodb://localhost/blog'
 };

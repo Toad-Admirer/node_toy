@@ -8,7 +8,6 @@ var path = require('path'),
     MongoStore = require('connect-mongo')(session),
     app = express();
 var settings = require('./settings/settings.js');
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/public/images/favicon/favicon.ico'));
@@ -25,7 +24,7 @@ app.use(session({
         maxAge: 1000 * 60 * 60 * 24 * 30 //30 days
     },
     store: new MongoStore({
-        url: 'mongodb://localhost/blog'
+        url: settings.mongodbUrl
     }),
 	resave : false,
 	saveUninitialized : true

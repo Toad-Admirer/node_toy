@@ -1,8 +1,12 @@
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/blog',(err) => {
+var settings = require('../settings/settings.js');
+
+var db = mongoose.connect(settings.mongodbUrl,(err) => {
   if(err) console.log(err);
   else console.log('connection success');
 });
+
+
 var Movie = require('../dao/mongodb/model/Movie.js');
 
 // var movie = new Movie({name : 'shenjianping',actress : 'shenjianping'});
@@ -12,9 +16,9 @@ var Movie = require('../dao/mongodb/model/Movie.js');
 //   else console.log('saved');
 // });
 
-// Movie.getById(1,(err,pro)=>{
+// Movie.getById(1,(err,movie)=>{
 //   if(err) console.log(err);
-//   console.log(pro);
+//   console.log(movie);
 // })
 
 // Movie.getAll(0,3,(err,movie) => {
