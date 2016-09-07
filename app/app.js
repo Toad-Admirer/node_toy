@@ -10,6 +10,9 @@ var path = require('path'),
     app = express();
 var settings = require('./settings/settings.js');
 
+//
+var fileUploadCtrl=require('./controller/commons/fileUploadController.js');
+
 // -------------------------日志中间件-----------------------------
 log4js.configure({
  appenders: [
@@ -47,10 +50,15 @@ app.listen(3000, function() {
     console.log('App listening at ' + 3000);
 });
 
+//express基本
 app.get('/', function(req, res) {
     res.send('Hello World!');
 });
 
+//jade模板Render
 app.get('/jade',function(req,res){
 	res.render('demo');
 });
+
+//Multer文件上传
+app.post('/dataInpute',fileUploadCtrl.dataInput);
