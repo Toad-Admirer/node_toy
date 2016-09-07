@@ -6,16 +6,29 @@ var path = require('path'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
     MongoStore = require('connect-mongo')(session),
+	log4js = require("log4js"),
     app = express();
 var settings = require('./settings/settings.js');
+
+// -------------------------日志中间件-----------------------------
+log4js.configure({
+ appenders: [
+   { type: 'console' },
+   { type: 'file', filename: 'express.log', category: 'express' }
+  ]
+});
+app.use(log4js.connectLogger(log4js.getLogger("express"), {level: log4js.levels.INFO}));
+// -------------------------- END --------------------------------
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/public/images/favicon/favicon.ico'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
 app.use(cookieParser());
+
 
 app.use(session({
     secret: 'smartQiaoZhen',
