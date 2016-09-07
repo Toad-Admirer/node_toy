@@ -21,4 +21,9 @@ var upload = multer({
 //    limits:{fieldSize:}//TODO 文件大小
 // });
 
+
+// muilter.single(‘file’), //适用于单文件上传
+// muilter.array(‘file’,num), //适用于多文件上传，num为最多上传个数，上传文件的数量可以小于num,
+// muilter.fields(fields), //适用于混合上传，比如A类文件1个，B类文件2个。官方API有详细说明
+
 module.exports = upload;

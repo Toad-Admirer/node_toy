@@ -1,4 +1,4 @@
-var muilter = require('../util/multerUtil.js');
+var muilter = require('../../util/multerUtil.js');
 //multer有single()中的名称必须是表单上传字段的name名称。
 var upload = muilter.single('file');
 exports.dataInput = function(req, res) {

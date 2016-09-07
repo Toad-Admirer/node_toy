@@ -6,8 +6,8 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+*.mp4
+*.avi
 
 # Dependency directory
 app/node_modules
-app/README.md

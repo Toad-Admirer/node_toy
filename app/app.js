@@ -17,7 +17,7 @@ var fileUploadCtrl=require('./controller/commons/fileUploadController.js');
 log4js.configure({
  appenders: [
    { type: 'console' },
-   { type: 'file', filename: 'express.log', category: 'express' }
+   { type: 'file', filename: './logs/express.log', category: 'express' }
   ]
 });
 app.use(log4js.connectLogger(log4js.getLogger("express"), {level: log4js.levels.INFO}));
