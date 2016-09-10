@@ -21,3 +21,12 @@ ReplyError: ERR syntax error
 [2016-09-11 01:33:24.184] [INFO] redis - redis-connected
 [2016-09-11 01:34:48.274] [INFO] redis - redis-connected
 [2016-09-11 01:35:20.260] [INFO] redis - redis-connected
+[2016-09-11 01:38:46.191] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:47.396] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:48.737] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:50.316] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:52.301] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:54.974] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:38:58.816] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:39:04.646] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-11 01:39:13.858] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
