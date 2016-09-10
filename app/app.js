@@ -1,13 +1,13 @@
 var path = require('path'),
     connect = require('connect'),
-	startup = require('./controller/startup.js'),
+	startupExpress = require('./startup/startup-express.js'),
+	redisClient = require('./startup/startup-redis.js'),
+	mysqlClient = require('./startup/startup-mysql.js'),
     app = require('express')();
 
 var fileUploadCtrl=require('./controller/commons/fileUploadController.js');
 
-startup(app);
-
-
+startupExpress(app);
 
 //express基本
 app.get('/', function(req, res) {

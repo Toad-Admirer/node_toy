@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
 var settings = require('../settings/settings.js');
 
-var db = mongoose.connect(settings.mongodbUrl,(err) => {
+var db = mongoose.connect(settings.mongodb.url,function(err){
   if(err) console.log(err);
   else console.log('connection success');
 });
 
 
-var Movie = require('../dao/mongodb/model/Movie.js');
+// var Movie = require('../dao/mongodb/model/Movie.js');
 
 // var movie = new Movie({name : 'shenjianping',actress : 'shenjianping'});
 // console.log(movie);

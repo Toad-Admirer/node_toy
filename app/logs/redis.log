@@ -1,0 +1,23 @@
+[2016-09-11 01:08:07.726] [INFO] redis - redis-connected
+[2016-09-11 01:08:07.731] [ERROR] redis - { [ReplyError: ERR syntax error]
+  command: 'SET',
+  args: [ 'framework', 'AngularJS', '2333' ],
+  code: 'ERR' }
+ReplyError: ERR syntax error
+    at parseError (C:\Users\darkmatter\Desktop\node_toy\app\node_modules\redis\node_modules\redis-parser\lib\parser.js:163:12)
+    at parseType (C:\Users\darkmatter\Desktop\node_toy\app\node_modules\redis\node_modules\redis-parser\lib\parser.js:224:14)
+[2016-09-11 01:15:26.679] [INFO] redis - redis-connected
+[2016-09-11 01:15:26.688] [ERROR] redis - { [ReplyError: ERR syntax error]
+  command: 'SET',
+  args: [ 'framework', 'AngularJS', '2333' ],
+  code: 'ERR' }
+ReplyError: ERR syntax error
+    at parseError (C:\Users\darkmatter\Desktop\node_toy\app\node_modules\redis\node_modules\redis-parser\lib\parser.js:163:12)
+    at parseType (C:\Users\darkmatter\Desktop\node_toy\app\node_modules\redis\node_modules\redis-parser\lib\parser.js:224:14)
+[2016-09-11 01:19:02.528] [INFO] redis - redis-connected
+[2016-09-11 01:24:00.150] [INFO] redis - redis-connected
+[2016-09-11 01:29:07.994] [INFO] redis - redis-connected
+[2016-09-11 01:31:56.282] [INFO] redis - redis-connected
+[2016-09-11 01:33:24.184] [INFO] redis - redis-connected
+[2016-09-11 01:34:48.274] [INFO] redis - redis-connected
+[2016-09-11 01:35:20.260] [INFO] redis - redis-connected

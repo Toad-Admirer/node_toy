@@ -6,3 +6,22 @@
 [2016-09-09 00:06:41.127] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
 [2016-09-09 00:06:41.759] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
 [2016-09-09 00:06:43.287] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:03:04.763] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:10:48.633] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:18:58.731] [INFO] express - GET /
+[2016-09-11 00:27:49.473] [INFO] express - GET / :ip
+[2016-09-11 00:28:08.812] [INFO] express - GET / :host
+[2016-09-11 00:30:12.303] [INFO] express - GET / :host
+[2016-09-11 00:35:28.264] [INFO] express - GET / :headers.host
+[2016-09-11 00:35:54.629] [INFO] express - GET / :upgrade
+[2016-09-11 00:37:04.897] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:37:39.225] [INFO] express - ::1 - - "GET /jade HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:31.475] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:39.956] [INFO] express - ::1 - - "GET / HTTP/1.1" 200 12 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:44.966] [INFO] express - ::1 - - "GET / HTTP/1.1" 200 12 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:45.973] [INFO] express - ::1 - - "GET / HTTP/1.1" 200 12 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:48.728] [INFO] express - ::1 - - "GET / HTTP/1.1" 200 12 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 00:38:52.037] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 01:01:58.044] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-11 01:34:48.270] [INFO] express - App listening at 3000
+[2016-09-11 01:35:20.256] [INFO] express - App listening at 3000
