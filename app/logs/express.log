@@ -27,3 +27,60 @@
 [2016-09-11 01:35:20.256] [INFO] express - App listening at 3000
 [2016-09-11 01:38:45.190] [INFO] express - App listening at 3000
 [2016-09-11 01:39:06.439] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:43:09.541] [INFO] express - App listening at 3000
+[2016-09-12 22:43:26.569] [INFO] express - ::1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:44:29.531] [INFO] express - App listening at 3000
+[2016-09-12 22:44:44.279] [INFO] express - App listening at 3000
+[2016-09-12 22:45:30.780] [INFO] express - App listening at 3000
+[2016-09-12 22:45:54.815] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 717 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:46:27.761] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:48:06.338] [INFO] express - App listening at 3000
+[2016-09-12 22:48:37.836] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:49:45.802] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 22:53:29.358] [INFO] express - App listening at 3000
+[2016-09-12 22:54:34.443] [INFO] express - App listening at 3000
+[2016-09-12 22:55:08.474] [INFO] express - App listening at 3000
+[2016-09-12 22:55:55.556] [INFO] express - App listening at 3000
+[2016-09-12 22:56:04.603] [INFO] express - App listening at 3000
+[2016-09-12 22:57:09.170] [INFO] express - App listening at 3000
+[2016-09-12 22:58:11.384] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:00:36.582] [INFO] express - App listening at 3000
+[2016-09-12 23:00:55.491] [INFO] express - ::1 - - "POST /multiUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:16:58.498] [INFO] express - App listening at 3000
+[2016-09-12 23:17:03.107] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2571 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:17:32.339] [INFO] express - App listening at 3000
+[2016-09-12 23:17:34.365] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2467 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:22:17.536] [INFO] express - App listening at 3000
+[2016-09-12 23:22:21.079] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2402 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:22:34.321] [INFO] express - App listening at 3000
+[2016-09-12 23:22:37.007] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2398 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:23:19.901] [INFO] express - App listening at 3000
+[2016-09-12 23:23:21.695] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2489 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:23:23.890] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2489 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:24:57.058] [INFO] express - App listening at 3000
+[2016-09-12 23:24:58.805] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2661 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:26:18.814] [INFO] express - App listening at 3000
+[2016-09-12 23:26:20.890] [INFO] express - ::1 - - "GET /file HTTP/1.1" 500 2661 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:26:45.716] [INFO] express - App listening at 3000
+[2016-09-12 23:26:47.555] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1715 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:28:17.680] [INFO] express - App listening at 3000
+[2016-09-12 23:28:20.462] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1783 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:29:49.259] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:39:22.204] [INFO] express - App listening at 3000
+[2016-09-12 23:39:23.616] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1797 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:39:36.853] [INFO] express - App listening at 3000
+[2016-09-12 23:39:38.969] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1799 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:39:41.109] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:41:39.138] [INFO] express - App listening at 3000
+[2016-09-12 23:41:57.708] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:42:15.887] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1785 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:42:53.214] [INFO] express - App listening at 3000
+[2016-09-12 23:43:04.441] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:44:05.817] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1822 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:44:15.201] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:44:45.226] [INFO] express - App listening at 3000
+[2016-09-12 23:44:47.234] [INFO] express - ::1 - - "GET /file HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:45:21.415] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:45:38.230] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:45:41.229] [INFO] express - ::1 - - "GET /file HTTP/1.1" 200 1787 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+[2016-09-12 23:45:47.245] [INFO] express - ::1 - - "POST /singleUpload HTTP/1.1" 200 - "http://localhost:3000/file" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"

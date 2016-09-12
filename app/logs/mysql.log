@@ -35,3 +35,24 @@ Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual th
 [2016-09-11 01:34:48.291] [INFO] mysql - mysql-connected
 [2016-09-11 01:35:20.268] [INFO] mysql - mysql-connected
 [2016-09-11 01:35:20.280] [ERROR] mysql - mysql-query-error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[2016-09-12 22:53:29.380] [INFO] mysql - mysql-connected
+[2016-09-12 22:55:08.495] [INFO] mysql - mysql-connected
+[2016-09-12 22:55:08.496] [INFO] mysql - mysql-connected
+[2016-09-12 22:55:55.428] [INFO] mysql - mysql-connected
+[2016-09-12 22:56:04.474] [INFO] mysql - mysql-connected
+[2016-09-12 22:57:09.045] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:00:36.455] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:16:58.367] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:17:32.207] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:22:17.407] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:22:34.190] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:23:19.772] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:24:56.925] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:26:18.683] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:26:45.576] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:28:17.541] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:39:22.068] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:39:36.719] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:41:38.927] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:42:53.027] [INFO] mysql - mysql-connection-initialized
+[2016-09-12 23:44:45.031] [INFO] mysql - mysql-connection-initialized

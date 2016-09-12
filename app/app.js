@@ -3,9 +3,8 @@ var path = require('path'),
 	startupExpress = require('./startup/startup-express.js'),
 	redisClient = require('./startup/startup-redis.js'),
 	mysqlClient = require('./startup/startup-mysql.js'),
+	upload = require('./startup/startup-multer.js'),
     app = require('express')();
-
-var fileUploadCtrl=require('./controller/commons/fileUploadController.js');
 
 startupExpress(app);
 
@@ -19,5 +18,24 @@ app.get('/jade',function(req,res){
 	res.render('demo');
 });
 
+app.get('/file',function(req,res){
+	res.render('fileUpload');
+});
+
 //Multer文件上传
-app.post('/dataInpute',fileUploadCtrl.dataInput);
+app.post('/singleUpload', upload.single('avatar'), function (req, res, next) {
+  // req.file is the `avatar` file
+  // req.body will hold the text fields, if there were any
+  console.log(req.file);
+  console.log(req.body);
+  res.end("aaaaaa");
+});
+
+app.post('/multiUpload', upload.array('photos', 12), function (req, res, next) {
+  // req.files is array of `photos` files
+  // req.body will contain the text fields, if there were any
+  console.log(req.files);
+  console.log(req.body);
+  //res.end(req.file + "<br/><br/>" + req.body);
+  res.end("bbbbbbb");
+});

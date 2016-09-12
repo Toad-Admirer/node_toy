@@ -5,7 +5,7 @@ var redis = require("redis"),
 var redisLogger = log4js.getLogger('redis');
 
 	client.on('connect', function() {
-	    redisLogger.info('redis-connected');
+	    redisLogger.info('redis-connection-initialized');
 	});
 
 	client.on("error", function (err) {

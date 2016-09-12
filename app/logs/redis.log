@@ -30,3 +30,29 @@ ReplyError: ERR syntax error
 [2016-09-11 01:38:58.816] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
 [2016-09-11 01:39:04.646] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
 [2016-09-11 01:39:13.858] [ERROR] redis - redis-error: Error: Redis connection to 127.0.0.1:6378 failed - connect ECONNREFUSED 127.0.0.1:6378
+[2016-09-12 22:43:09.552] [INFO] redis - redis-connected
+[2016-09-12 22:44:29.534] [INFO] redis - redis-connected
+[2016-09-12 22:44:44.283] [INFO] redis - redis-connected
+[2016-09-12 22:45:30.783] [INFO] redis - redis-connected
+[2016-09-12 22:48:06.342] [INFO] redis - redis-connected
+[2016-09-12 22:53:29.362] [INFO] redis - redis-connected
+[2016-09-12 22:54:34.446] [INFO] redis - redis-connected
+[2016-09-12 22:55:08.477] [INFO] redis - redis-connected
+[2016-09-12 22:55:55.558] [INFO] redis - redis-connected
+[2016-09-12 22:56:04.605] [INFO] redis - redis-connected
+[2016-09-12 22:57:09.172] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:00:36.584] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:16:58.500] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:17:32.341] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:22:17.539] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:22:34.323] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:23:19.903] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:24:57.060] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:26:18.816] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:26:45.717] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:28:17.682] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:39:22.207] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:39:36.855] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:41:39.140] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:42:53.216] [INFO] redis - redis-connection-initialized
+[2016-09-12 23:44:45.227] [INFO] redis - redis-connection-initialized

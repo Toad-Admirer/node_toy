@@ -1,6 +1,6 @@
 lib-cov
 *.seed
-# *.log
+*.log
 *.csv
 *.dat
 *.out
@@ -11,3 +11,4 @@ lib-cov
 
 # Dependency directory
 app/node_modules
+app/settings
