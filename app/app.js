@@ -1,8 +1,8 @@
 var path = require('path'),
     connect = require('connect'),
 	startupExpress = require('./startup/startup-express.js'),
-	redisClient = require('./startup/startup-redis.js'),
-	mysqlClient = require('./startup/startup-mysql.js'),
+	//redisClient = require('./startup/startup-redis.js'),
+	//mysqlClient = require('./startup/startup-mysql.js'),
 	upload = require('./startup/startup-multer.js'),
     app = require('express')();
 
