@@ -39,9 +39,8 @@ html
                 }
                 // HTML5 新增对象
                 var formData = new FormData(document.getElementById('uploadForm'));
+                formData.append('screenshots',true);
                 //添加其他表单域
-                formData.append('user', 'haolin');
-                formData.append('pass', '111111');
                 var upBtn = document.querySelector('input[value="上传"]'),
                     sucessBtn = document.querySelector('input[value="上传成功"]'),
                     failBtn = document.querySelector('input[value="上传失败"]'),
@@ -49,13 +48,12 @@ html
                     circle = document.querySelectorAll('circle')[1],
                     meter = Math.PI*2*22,
                     xhr = new XMLHttpRequest();
-                xhr.open('POST', '/singleUpload'); //请求url
+                xhr.open('POST', '/fileUpload'); //请求url
                 xhr.upload.onprogress = function(event) {
                     if (event.lengthComputable) {
                         upBtn.setAttribute('style','display:none');
                         svg.setAttribute('style','display:inline-block');
                         var completedPercent = event.loaded / event.total;
-                        document.getElementById('showBox').value = completedPercent;
                         circle.setAttribute('stroke-dasharray',meter*completedPercent + " " + meter*(1-completedPercent))
                     }
                 }
@@ -64,12 +62,10 @@ html
                     if (this.status == 200||this.status == 304) {
                         svg.setAttribute('style','display:none');
                         sucessBtn.setAttribute('style','display:inline-block');
-                        //alert(this.responseText);
                     } else {
                         upBtn.setAttribute('style','display:none');
                         svg.setAttribute('style','display:none');
                         failBtn.setAttribute('style','display:inline-block');
-                        //alert('出错了');
                     }
                 };
                 xhr.send(formData);
@@ -77,14 +73,15 @@ html
 
     body
         h2 单个文件上传
-        form(id="uploadForm",action="/singleUpload",method="post",enctype="multipart/form-data")
-            input(type="file",name="avatar")
+        form(id="uploadForm",action="/fileUpload",method="post",enctype="multipart/form-data")
+            input(type="text",name="name")
             br
-            input(type="text",name="aaa")
+            span 封面: 
+            input(type="file",name="cover")
             br
-            input(type="text",name="bbb")
+            span 文件: 
+            input(type="file",name="source")
             br
-            input(type="submit",name="submit")
         div.upload
             input(type="button",value="上传",onclick="upload()")
             svg(width="50",height="50",viewbox="0 0 50 50")
@@ -92,20 +89,3 @@ html
                 circle(cx="25",cy="25",r="22",stroke-width="5",stroke="#00A5E0",fill="none",transform="matrix(0,-1,1,0,0,50)",stroke-dasharray="0 1069")
             input(type="button",value="上传成功")
             input(type="button",value="上传失败")
-        //-input(type="button",value="测试XMLHttpRequest-2",onclick="upload()")
-        input(type="text",id="showBox")
-        h2 多文件上传
-        form(action="/multiUpload",method="post",enctype="multipart/form-data")
-            input(type="file",name="photos")
-            br
-            input(type="file",name="photos")
-            br
-            input(type="file",name="photos")
-            br
-            input(type="file",name="photos")
-            br
-            input(type="text",name="aaa")
-            br
-            input(type="text",name="bbb")
-            br
-            input(type="submit",name="submit")

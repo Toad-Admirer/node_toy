@@ -11,4 +11,5 @@ lib-cov
 
 # Dependency directory
 app/node_modules
-app/settings
+app/logs
+app/public/uploads

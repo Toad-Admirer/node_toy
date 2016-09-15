@@ -1,0 +1,73 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Clappr Demo
+        script(src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js")
+        script(src="https://cdn.jsdelivr.net/clappr.thumbnails-plugin/latest/clappr-thumbnails-plugin.js")
+
+    body
+        div#player
+        script.
+            var player = new Clappr.Player({
+                width: 640, height: 360,
+                //进度条缩略图,播放器状态,直播码率,画中画
+                plugins: [
+                    ClapprThumbnailsPlugin
+                ],
+                scrubThumbnails: {
+                    backdropHeight: 64,
+                    spotlightHeight: 84,
+                    thumbs: [
+                        {
+                            time: 0,
+                            url: "uploads/screenshots-at-0-seconds.png"
+                        }, 
+                        {
+                            time: 30,
+                            url: "uploads/screenshots-at-30-seconds.png"
+                        }, 
+                        {
+                            time: 60,
+                            url: "uploads/screenshots-at-60-seconds.png"
+                        }, 
+                        {
+                            time: 90,
+                            url: "uploads/screenshots-at-90-seconds.png"
+                        }, 
+                        {
+                            time: 120,
+                            url: "uploads/screenshots-at-120-seconds.png"
+                        }, 
+                        {
+                            time: 150,
+                            url: "uploads/screenshots-at-150-seconds.png"
+                        }, 
+                        {
+                            time: 180,
+                            url: "uploads/screenshots-at-180-seconds.png"
+                        }, 
+                        {
+                            time: 210,
+                            url: "uploads/screenshots-at-210-seconds.png"
+                        }, 
+                        {
+                            time: 240,
+                            url: "uploads/screenshots-at-240-seconds.png"
+                        }, 
+                        {
+                            time: 270,
+                            url: "uploads/screenshots-at-270-seconds.png"
+                        }, 
+                        {
+                            time: 300,
+                            url: "uploads/screenshots-at-300-seconds.png"
+                        }
+                    ]
+                },
+                source: "uploads/source.mp4",
+                poster: "uploads/cover.jpg",
+                watermark: "images/watermark.png", position: 'top-right',
+                watermarkLink: "http://www.baidu.com/",
+                parentId: "#player"
+            });

@@ -19,7 +19,7 @@ var db = mongoose.connect(settings.mongodb.url,function(err){
 // Movie.getById(1,(err,movie)=>{
 //   if(err) console.log(err);
 //   console.log(movie);
-// })
+// });
 
 // Movie.getAll(0,3,(err,movie) => {
 //   if(err) console.log(err);

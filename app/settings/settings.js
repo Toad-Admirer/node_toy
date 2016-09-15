@@ -1,6 +1,6 @@
 module.exports = {
     mongodb: {
-		url : 'mongodb://localhost/blog'
+		url : 'mongodb://localhost/movie'
 	},
     redis: {
         host: '127.0.0.1',
@@ -13,5 +13,8 @@ module.exports = {
 		user : 'root',
 		password : 'xu,19920328.',
 		connectionLimit : 50
-	}
+	},
+    ffmpeg : {
+        screenshotsDuration : 30
+    }
 };

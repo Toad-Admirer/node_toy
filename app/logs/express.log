@@ -1,9 +1,0 @@
-[2016-09-15 16:23:07.095] [INFO] express - ::1 - - "GET /stylesheet/css/page/index.css HTTP/1.1" 404 42 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:23:07.113] [INFO] express - ::1 - - "GET /javascript/lib/jquery/jquery.min.js HTTP/1.1" 404 48 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:23:07.829] [INFO] express - ::1 - - "GET /qiaozhen HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:23:07.864] [INFO] express - ::1 - - "GET /stylesheet/css/page/index.css HTTP/1.1" 404 42 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:23:07.867] [INFO] express - ::1 - - "GET /javascript/lib/jquery/jquery.min.js HTTP/1.1" 404 48 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:24:00.022] [INFO] express - App listening at 3000
-[2016-09-15 16:24:05.786] [INFO] express - ::1 - - "GET /qiaozhen HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:24:05.833] [INFO] express - ::1 - - "GET /stylesheet/css/page/index.css HTTP/1.1" 200 946 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
-[2016-09-15 16:24:05.840] [INFO] express - ::1 - - "GET /javascript/lib/jquery/jquery.min.js HTTP/1.1" 200 86355 "http://localhost:3000/qiaozhen" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
