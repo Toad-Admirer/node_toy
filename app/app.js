@@ -15,17 +15,6 @@ app.get('/qiaozhen', function(req, res) {
     res.render('./page/index.jade');
 });
 
-//express基本
-app.get('/', function(req, res) {
-    res.send('Hello World!');
-});
-
-//jade模板Render
-app.get('/jade', function(req, res) {
-    res.render('./demo/demo.jade');
-});
-
-
 
 
 
