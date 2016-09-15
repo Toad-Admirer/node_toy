@@ -11,7 +11,7 @@ module.exports = {
 		database : 'seckill',
 		port : 3306,
 		user : 'root',
-		password : 'xu,19920328.',
+		password : 'root',
 		connectionLimit : 50
 	},
     ffmpeg : {
