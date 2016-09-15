@@ -8,6 +8,12 @@ var path = require('path'),
 
 startupExpress(app);
 
+
+//乔test
+app.get('/qiaozhen',function(res,res){
+    res.render('./page/index.jade')
+})
+
 //express基本
 app.get('/', function(req, res) {
     res.send('Hello World!');
@@ -15,12 +21,13 @@ app.get('/', function(req, res) {
 
 //jade模板Render
 app.get('/jade',function(req,res){
-	res.render('demo');
+	res.render('./demo/demo.jade');
 });
 
 app.get('/file',function(req,res){
-	res.render('fileUpload');
+	res.render('./demo/fileUpload.jade');
 });
+
 
 //Multer文件上传
 app.post('/singleUpload', upload.single('avatar'), function (req, res, next) {

@@ -1,11 +1,11 @@
-var path = require('path'),
-    favicon = require('serve-favicon'),
+var favicon = require('serve-favicon'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
     MongoStore = require('connect-mongo')(session),
     log4js = require("./startup-log4js.js"),
-    settings = require('../settings/settings.js');
+    settings = require('../settings/settings.js'),
+    express = require('express');
 //以下路径调用的地方在app.js环境下  所以路径为./xxx
 module.exports = function(app) {
     app.set('views', './views');
@@ -38,5 +38,6 @@ module.exports = function(app) {
     app.listen(3000, function() {
         expressLogger.info('App listening at ' + 3000);
     });
+    app.use(express.static('./public'));
 	return app;
 }
