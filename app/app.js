@@ -1,3 +1,4 @@
+
 var app = require('express')(),
     redisClient = require('./startup/startup-redis.js'),
     mysqlClient = require('./startup/startup-mysql.js'),
@@ -5,7 +6,8 @@ var app = require('express')(),
     startupExpress = require('./startup/startup-express.js')(app),
     startupRouter = require('./startup/startup-router.js')(app);
 
+
 //乔test
-app.get('/qiaozhen', function(req, res) {
+app.get('/', function(req, res) {
     res.render('./page/index.jade');
 });

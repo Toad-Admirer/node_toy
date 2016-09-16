@@ -8,6 +8,7 @@ lib-cov
 *.gz
 *.mp4
 *.avi
+*.rb
 
 # Dependency directory
 app/node_modules
