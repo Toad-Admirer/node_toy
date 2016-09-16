@@ -6,10 +6,9 @@ var MovieSchema = new mongoose.Schema({
     name : String,
     actress : [String],
 	publisher : String,
+    filename : String,
     tags : [],
-	cover : String,//cover file path
-	screenshot : [String],//ffmpeg screenshot
-	path : String,//resource file path
+    duration : Number,
     meta: {
         created: {
             type: Date,
