@@ -1,8 +1,8 @@
 var path = require('path'),
     connect = require('connect'),
     startupExpress = require('./startup/startup-express.js'),
-    redisClient = require('./startup/startup-redis.js'),
-    mysqlClient = require('./startup/startup-mysql.js'),
+    //redisClient = require('./startup/startup-redis.js'),
+    //mysqlClient = require('./startup/startup-mysql.js'),
     upload = require('./startup/startup-multer.js'),
     ffmpeg = require('fluent-ffmpeg'),
     setting = require('./settings/settings.js'),
@@ -11,7 +11,7 @@ var path = require('path'),
 startupExpress(app);
 
 //乔test
-app.get('/qiaozhen', function(req, res) {
+app.get('/', function(req, res) {
     res.render('./page/index.jade');
 });
 

@@ -3,16 +3,16 @@ html
     head
         block title
         meta(charset="UTF-8")
-        //- -var $styleLink = '../public/stylesheet/'
+        -var $styleLink = '/stylesheet/css/'
         //- -var $jsLink = '../public/js/'
         //- -var $imgLink = '../public/img/'
         //- -var $styleLink = '/stylesheet/'
         //- -var $jsLink = '/js/'
         //- -var $imgLink = '/img/'
-        //- link(rel="stylesheet", href="#{$styleLink}reset.css")
+        //- link(rel="stylesheet",href="#{$styleLink}reset.css")
         //- link(rel="stylesheet", href="#{$styleLink}common.css")
-        //- link(rel="stylesheet", href="#{$styleLink}header.css")
-        //- link(rel="stylesheet", href="#{$styleLink}footer.css")
+        //- link(rel="stylesheet",href="#{$styleLink}header.css")
+        link(rel="stylesheet",href="#{$styleLink}icon/iconfont.css")
         block css
     body
         include ./include/header.jade
