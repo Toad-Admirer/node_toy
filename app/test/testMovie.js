@@ -7,7 +7,7 @@ var db = mongoose.connect(settings.mongodb.url,function(err){
 });
 
 
-// var Movie = require('../dao/mongodb/model/Movie.js');
+var Movie = require('../dao/mongodb/model/Movie.js');
 
 // var movie = new Movie({name : 'shenjianping',actress : 'shenjianping'});
 // console.log(movie);
@@ -16,10 +16,10 @@ var db = mongoose.connect(settings.mongodb.url,function(err){
 //   else console.log('saved');
 // });
 
-// Movie.getById(1,(err,movie)=>{
-//   if(err) console.log(err);
-//   console.log(movie);
-// });
+Movie.getById(4,(err,movie)=>{
+  if(err) console.log(err);
+  console.log(movie);
+});
 
 // Movie.getAll(0,3,(err,movie) => {
 //   if(err) console.log(err);

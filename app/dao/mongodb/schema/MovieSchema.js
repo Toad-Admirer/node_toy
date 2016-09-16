@@ -3,7 +3,11 @@ var autoIncrement = require('mongoose-auto-increment'); //自增ID 模块
 autoIncrement.initialize(mongoose.connection); //初始化
 var MovieSchema = new mongoose.Schema({
     id : Number,
-    name : String,
+    name : {
+        type: String,
+        index: {unique:true},
+        trim : true,
+    },
     actress : [String],
 	publisher : String,
     filename : String,
@@ -33,27 +37,17 @@ MovieSchema.statics ={
     return this.findOne({id:id}).select({_id:0,meta:0,__v:0})
     .exec(cb);
   },
-  getAll : function(pageNo,pageSize,cb){
-    return this.find().select({_id:0,__v:0})
-    .skip(pageNo*pageSize).limit(pageSize).sort({'meta.created':-1})
-    .exec(cb);
-  },
   deleteById : function(id,cb){
     return this.remove({id:id})
     .exec(cb);
   },
   getCount : function(cb){
     return this.find().count().exec(cb);
+  },
+  getByName : function(name,cb){
+      return this.findOne({name:name}).select({_id:0,meta:0,__v:0})
+      .exec(cb);
   }
 };
-
-MovieSchema.pre('save', function(next)  {
-  if (this.isNew) {
-      this.meta.createAt = this.meta.updateAt = Date.now();
-    }else {
-      this.meta.updateAt = Date.now();
-    }
-    next();
-});
 
 module.exports = MovieSchema;
