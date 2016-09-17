@@ -6,7 +6,7 @@ var MovieSchema = new mongoose.Schema({
     name : {
         type: String,
         index: {unique:true},
-        trim : true,
+        trim : true
     },
     actress : [String],
 	publisher : String,

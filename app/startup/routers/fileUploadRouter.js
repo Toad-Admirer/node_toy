@@ -30,7 +30,7 @@ module.exports = function(app) {
                     var screenshotsPosition = [];
                     var screenshots = [];
                     var duration = metadata.format.duration;
-                    var offset = setting.ffmpeg.screenshotsDuration;
+                    var bo = setting.ffmpeg.screenshotsDuration;
                     //根据影片时长,截取间隔为offset的图片
                     for (var i = 0; i < duration; i += offset) {
                         screenshotsPosition.push(i);
