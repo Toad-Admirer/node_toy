@@ -234,45 +234,51 @@ body {
   text-align: center;
 }
 /* line 16, ../../sass/page/upload.scss */
+.file-wrapper .filename {
+  width: 250px;
+  height: 24px;
+  outline: none;
+}
+/* line 21, ../../sass/page/upload.scss */
 .file-wrapper h1 {
   padding: 10px;
   font-size: 30px;
   font-weight: 600;
   color: #6e6b72;
 }
-/* line 22, ../../sass/page/upload.scss */
+/* line 27, ../../sass/page/upload.scss */
 .file-wrapper h2 {
   padding: 10px;
   font-size: 16px;
 }
-/* line 26, ../../sass/page/upload.scss */
+/* line 31, ../../sass/page/upload.scss */
 .file-wrapper .a-upload {
   margin: 0 auto;
   position: relative;
   width: 250px;
   text-align: left;
 }
-/* line 31, ../../sass/page/upload.scss */
+/* line 36, ../../sass/page/upload.scss */
 .file-wrapper .a-upload input {
   vertical-align: middle;
   margin: 0;
   padding: 0;
 }
-/* line 36, ../../sass/page/upload.scss */
+/* line 41, ../../sass/page/upload.scss */
 .file-wrapper .a-upload .txt {
   height: 24px;
   border: 1px solid #cdcdcd;
   width: 180px;
   border-right: none;
 }
-/* line 42, ../../sass/page/upload.scss */
+/* line 47, ../../sass/page/upload.scss */
 .file-wrapper .a-upload .btn {
   background-color: #fff;
   border: 1px solid #cdcdcd;
   height: 24px;
   width: 70px;
 }
-/* line 48, ../../sass/page/upload.scss */
+/* line 53, ../../sass/page/upload.scss */
 .file-wrapper .a-upload .file {
   opacity: 0;
   position: absolute;
@@ -282,12 +288,12 @@ body {
   height: 24px;
 }
 
-/* line 60, ../../sass/page/upload.scss */
+/* line 65, ../../sass/page/upload.scss */
 div.upload {
   min-width: 480px;
   text-align: center;
 }
-/* line 63, ../../sass/page/upload.scss */
+/* line 68, ../../sass/page/upload.scss */
 div.upload:before {
   display: inline-block;
   vertical-align: middle;
@@ -297,7 +303,7 @@ div.upload:before {
   height: 100%;
   content: '';
 }
-/* line 68, ../../sass/page/upload.scss */
+/* line 73, ../../sass/page/upload.scss */
 div.upload svg {
   display: inline-block;
   vertical-align: middle;
@@ -306,7 +312,7 @@ div.upload svg {
   *display: inline;
   display: none;
 }
-/* line 72, ../../sass/page/upload.scss */
+/* line 77, ../../sass/page/upload.scss */
 div.upload input {
   display: inline-block;
   vertical-align: middle;
@@ -321,11 +327,11 @@ div.upload input {
   outline: none;
   cursor: pointer;
 }
-/* line 82, ../../sass/page/upload.scss */
+/* line 87, ../../sass/page/upload.scss */
 div.upload .success {
   display: none;
 }
-/* line 85, ../../sass/page/upload.scss */
+/* line 90, ../../sass/page/upload.scss */
 div.upload .fail {
   display: none;
 }

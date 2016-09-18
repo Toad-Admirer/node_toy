@@ -13,6 +13,11 @@ body{
 	min-width:480px;
 	padding:30px;
 	text-align:center;
+	.filename{
+		width: 250px;
+		height: 24px;
+		outline: none;
+	}
 	h1{
 		padding: 10px;
 		font-size: 30px;
