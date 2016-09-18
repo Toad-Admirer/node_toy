@@ -1,0 +1,68 @@
+extends ../layout.jade
+
+block title
+	title 上传
+
+block css
+	link(rel="stylesheet",href="stylesheet/css/page/upload.css")
+block content
+	div.file-wrapper
+		h1 上传文件
+		form(id="uploadForm",action="/fileUpload",method="post",enctype="multipart/form-data")
+			h2 封面
+			div.a-upload 
+				input(type='text',name='textfield',id='textfield1',class='txt') 
+				input(type='button',class='btn',value='浏览...') 
+				input(type="file",name="fileField",accept=".jpg,.png",class="file",id="fileField",size="28",onchange="document.getElementById('textfield1').value=this.value")
+			h2 视频
+			div.a-upload 
+				input(type='text',name='textfield2',id='textfield2',class='txt') 
+				input(type='button',class='btn',value='浏览...') 
+				input(type="file",name="fileField",class="file",id="fileField",size="28",onchange="document.getElementById('textfield2').value=this.value")
+	div.upload
+		input.up(type="button",value="上传",onclick="upload()")
+		svg(width="50",height="50",viewbox="0 0 50 50")
+			circle(cx="25",cy="25",r="22",stroke-width="5",stroke="#D1D3D7",fill="none")
+			circle(cx="25",cy="25",r="22",stroke-width="5",stroke="#00A5E0",fill="none",transform="matrix(0,-1,1,0,0,50)",stroke-dasharray="0 1069")
+		input(type="button",value="上传成功",class="success")
+		input(type="button",value="上传失败",class="fail")
+block js
+	script.
+		function upload(){
+			if (!window.FormData){
+				alert('您的浏览器不支持第二代XmlHttpRequest');
+				return;
+				}
+				// HTML5 新增对象
+				var formData = new FormData(document.getElementById('uploadForm'));
+				formData.append('screenshots',true);
+				//添加其他表单域
+				var upBtn = document.querySelector('.up'),
+					successBtn = document.querySelector('.success'),
+					failBtn = document.querySelector('.fail'),
+					svg = document.querySelector('svg'),
+					circle = document.querySelectorAll('circle')[1],
+					meter = Math.PI*2*22,
+					xhr = new XMLHttpRequest();
+					xhr.open('POST', '/fileUpload'); //请求url
+				xhr.upload.onprogress = function(event) {
+					if (event.lengthComputable) {
+						upBtn.setAttribute('style','display:none');
+						svg.setAttribute('style','display:inline-block');
+						var completedPercent = event.loaded / event.total;
+						circle.setAttribute('stroke-dasharray',meter*completedPercent + " " + meter*(1-completedPercent))
+				}
+				}
+				//上传完成回调函数
+				xhr.onload = function(event) {
+					if (this.status == 200||this.status == 304) {
+						svg.setAttribute('style','display:none');
+						successBtn.setAttribute('style','display:inline-block');
+						} else {
+						upBtn.setAttribute('style','display:none');
+						svg.setAttribute('style','display:none');
+						failBtn.setAttribute('style','display:inline-block');
+					}
+				};
+				xhr.send(formData);
+			}
