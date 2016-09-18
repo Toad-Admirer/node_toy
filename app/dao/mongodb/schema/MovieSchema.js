@@ -47,6 +47,11 @@ MovieSchema.statics ={
   getByName : function(name,cb){
       return this.findOne({name:name}).select({_id:0,meta:0,__v:0})
       .exec(cb);
+  },
+  listByPagination : function(pageNo,pageSize,cb){
+      return this.find({}).select({_id:0,__v:0})
+      .skip(pageNo*pageSize).limit(pageSize).sort({'meta.createAt':-1})
+      .exec(cb);
   }
 };
 

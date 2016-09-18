@@ -19,48 +19,17 @@ block content
 				h2
 					a 我是主题
 				div.playlist
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
-					div.temp
-						img(src="")
-						a.p-name 我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称我是名称
-						a.up-name 我是上传者
-						ul
-							li.watch 11111次观看
-							li.date 5天前
+					
+					each val, index in movies
+						div.temp
+							a(href="/clappr/#{val.name}",target="_blank")
+								img(src="uploads/movie/#{val.name}/#{val.name}.jpg")
+							a.p-name(href="/clappr/#{val.name}",target="_blank") #{val.name}
+							a.up-name 我是上传者
+							ul
+								li.watch 11111次观看
+								li.date 5天前
+					
 					
 
 
