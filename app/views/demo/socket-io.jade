@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Socket.io Demo
+        script(src="/javascript/lib/socket.io/socket.io-1.4.5.js")
+
+    body
+        #loginbox
+            div(style='width:260px;margin:200px auto;')
+                | 请先输入你在聊天室的昵称
+                br
+                br
+                input#username(type='text', style='width:180px;', placeholder='请输入用户名', name='username')
+                input(type='button', style='width:50px;', value='提交', onclick='CHAT.usernameSubmit();')
+        #chatbox(style='display:none;')
+            div(style='background:#3d3d3d;height: 28px; width: 100%;font-size:12px;')
+                div(style='line-height: 28px;color:#fff;')
+                    span(style='text-align:left;margin-left:10px;') Websocket多人聊天室
+                    span(style='float:right; margin-right:10px;')
+                        span#showusername
+                        |  
+                        a(href='javascript:;', onclick='CHAT.logout()', style='color:#fff;') 退出
+            #doc
+                #chat
+                    #message.message
+                        #onlinecount(style='background:#EFEFF4; font-size:12px; margin-top:10px; margin-left:10px; color:#666;')
+                    .input-box
+                        .input
+                            input#content(type='text', maxlength='140', placeholder='请输入聊天内容，按Ctrl提交', name='content')
+                        .action
+                            button#mjr_send(type='button', onclick='CHAT.submit();') 提交
+                script(src="/javascript/socket-io/client.js")
