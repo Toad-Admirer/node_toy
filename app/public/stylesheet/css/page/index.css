@@ -84,7 +84,7 @@ html, body {
 /* line 4, ../../sass/header.scss */
 .head-wrapper {
   width: 100%;
-  min-width: 450px;
+  min-width: 480px;
   height: 49px;
   border-bottom: 1px solid #e8e8e8;
   padding: 7px 30px 8px 30px;
@@ -218,5 +218,120 @@ html, body {
   /* line 135, ../../sass/header.scss */
   .head-wrapper .search button {
     width: 36px;
+  }
+}
+/* line 6, ../../sass/page/index.scss */
+body {
+  font-size: 13px;
+  font-family: Roboto,arial,sans-serif;
+}
+
+/* line 11, ../../sass/page/index.scss */
+.content-wrapper {
+  width: 100%;
+  min-width: 480px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0px 30px 8px 30px;
+  background-color: white;
+}
+/* line 17, ../../sass/page/index.scss */
+.content-wrapper .content-nav {
+  width: 100%;
+  text-align: center;
+}
+/* line 21, ../../sass/page/index.scss */
+.content-wrapper .content-nav span {
+  display: inline-block;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #666666;
+}
+/* line 29, ../../sass/page/index.scss */
+.content-wrapper .content-nav span:hover {
+  border-bottom: 2px solid #cc181e;
+}
+/* line 33, ../../sass/page/index.scss */
+.content-wrapper .content-nav span.active {
+  color: black;
+  border-bottom: 2px solid #cc181e;
+}
+/* line 38, ../../sass/page/index.scss */
+.content-wrapper .list {
+  padding: 15px 18px;
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 1264px;
+}
+/* line 46, ../../sass/page/index.scss */
+.content-wrapper .list .playlist {
+  margin-left: -10px;
+}
+/* line 49, ../../sass/page/index.scss */
+.content-wrapper .list .playlist:after {
+  display: block;
+  content: '';
+  height: 0px;
+  clear: both;
+}
+/* line 56, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp {
+  margin-left: 10px;
+  float: left;
+  width: 196px;
+  height: 177px;
+}
+/* line 63, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp img {
+  width: 196px;
+  height: 110px;
+  border-style: none;
+}
+/* line 68, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp a.p-name {
+  display: block;
+  color: #167ac6;
+  padding: 0 5px;
+  height: 32px;
+  line-height: 16.9px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 82, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp a.up-name {
+  padding: 0 5px;
+  color: #767676;
+  cursor: pointer;
+}
+/* line 86, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp a.up-name:hover {
+  color: #167ac6;
+  text-decoration: underline;
+}
+/* line 91, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp ul {
+  padding: 2px 5px;
+  overflow: hidden;
+}
+/* line 94, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp ul .watch {
+  float: left;
+}
+/* line 97, ../../sass/page/index.scss */
+.content-wrapper .list .playlist .temp ul .date {
+  float: right;
+}
+
+@media (max-width: 1100px) {
+  /* line 109, ../../sass/page/index.scss */
+  .content-wrapper .list {
+    width: 646px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 117, ../../sass/page/index.scss */
+  .content-wrapper .list {
+    width: 440px;
   }
 }
