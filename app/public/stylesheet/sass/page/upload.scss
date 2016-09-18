@@ -1,0 +1,88 @@
+@import "../reset.scss";
+@import "compass/css3";
+@import "../header.scss";
+@import "../common.scss";
+
+body{
+	font-size: 13px;
+	font-family: 'Microsoft YaHei',arial,sans-serif;
+}
+
+.file-wrapper{
+	width:100%;
+	min-width:480px;
+	padding:30px;
+	text-align:center;
+	h1{
+		padding: 10px;
+		font-size: 30px;
+		font-weight: 600;
+		color: #6e6b72;
+	}
+	h2{
+		padding: 10px;
+		font-size: 16px;
+	}
+	.a-upload{
+		margin: 0 auto;
+		position: relative;
+		width: 250px;
+		text-align: left;
+		input{
+			vertical-align: middle;
+			margin: 0;
+			padding: 0;
+		}
+		.txt{
+			height: 24px;
+			border:1px solid #cdcdcd;
+			width: 180px;
+			border-right: none;
+		}
+		.btn{
+			background-color:#fff;
+			border:1px solid #cdcdcd;
+			height: 24px;
+			width: 70px;
+		}
+		.file{
+			opacity: 0;
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 250px;
+			height: 24px;
+		}
+	}
+	
+}
+
+div.upload{
+		min-width:480px;
+		text-align: center;
+		&:before{
+			@include inline-block;
+			height: 100%;
+			content: '';
+		}
+		svg{
+			@include inline-block;
+			display: none;
+		}
+		input{
+			@include inline-block;
+			width: 100px;
+			height: 30px;
+			border: 1px solid #cdcdcd;
+			background-color: #fff;
+			border-radius: 10px;
+			outline: none;
+			cursor: pointer;
+		}
+		.success{
+			display:none;
+		}
+		.fail{
+			display: none;
+		}
+	}

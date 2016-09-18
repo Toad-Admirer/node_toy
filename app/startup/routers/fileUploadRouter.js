@@ -6,7 +6,7 @@ var upload = require('../startup-multer.js'),
 module.exports = function(app) {
     //播放器渲染
     app.get('/file', function(req, res) {
-        res.render('./demo/fileUpload.jade');
+        res.render('./page/upload.jade');
     });
 
     //Multer文件上传
