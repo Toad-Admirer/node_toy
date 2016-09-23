@@ -14,11 +14,11 @@ var MovieSchema = new mongoose.Schema({
     tags : [],
     duration : Number,
     meta: {
-        created: {
+        createAt: {
             type: Date,
             default: Date.now()
         },
-        updated: {
+        updateAt: {
             type: Date,
             default: Date.now()
         }
@@ -32,13 +32,29 @@ MovieSchema.plugin(autoIncrement.plugin, {
     incrementBy: 1    //每次自增数量
 });
 
+MovieSchema.pre('save',function(next){
+  if (this.isNew) {
+    this.meta.createAt = this.meta.updateAt = Date.now();
+  }else{
+    this.meta.updateAt = Date.now();
+  }
+
+  next();
+});
+
 MovieSchema.statics ={
+  fetch : function(cb){
+    return this
+      .find({})
+      .sort('meta.updateAt')
+      .exec(cb);
+  },
   getById : function(id,cb){
-    return this.findOne({id:id}).select({_id:0,meta:0,__v:0})
+    return this.findOne({_id:id}).select({_id:0,meta:0,__v:0})
     .exec(cb);
   },
   deleteById : function(id,cb){
-    return this.remove({id:id})
+    return this.remove({_id:id})
     .exec(cb);
   },
   getCount : function(cb){

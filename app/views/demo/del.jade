@@ -1,0 +1,42 @@
+extends ../layout.jade
+
+block title
+	title 后台删除
+
+block css
+	
+block content
+	.container
+		.row
+			table.table.table-hover.table-bordered
+				thead
+					tr
+						th 名称
+						th 删除
+				tbody
+					each item in movies
+						tr(class="item-id-#{item._id}")
+							td #{item.name}
+							td
+								button.btn.btn-danger.del(type="button",data-id="#{item._id}") 删除
+block js
+	script.
+		//- console.log($)
+		$('.del').on('click',function(){
+			var target = $(this);
+			var id = target.attr('data-id');
+			var tr = $('.item-id-' + id);
+			$.ajax({
+				method: 'POST',
+				url: '/del',
+				dataType: 'json',
+				data: {id : id}
+			}).done(function(res){
+				console.log(res);
+				if(res.success === 1){
+					if(tr.length > 0){
+						tr.remove();
+					}
+				}
+			})
+		})

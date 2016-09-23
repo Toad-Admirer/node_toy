@@ -21,3 +21,24 @@ app.get('/', function(req, res) {
         res.render('./page/index.jade',{movies:movies});
     });
 });
+
+app.get('/del',function(req,res){
+    Movie.fetch(function(err,movies){
+        if(err) console.log(err);
+        res.render('./demo/del.jade',{movies:movies});
+    });
+});
+
+app.post('/del',function(req,res){
+    var id =req.body.id;
+    //console.log(id);
+    if(id){
+        Movie.remove({_id:id},function(err){
+            if (err) {
+                console.log(err)
+            }else{
+                res.json({success:1})
+            }
+        })
+    }
+})
